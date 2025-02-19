@@ -1,0 +1,11 @@
+/ {
+    kscan {
+        debounce-press-ms = <0>;
+    };
+
+    some-gpios = 
+        <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>,
+        <&gpio0 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>,
+        <&gpio0 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>
+    ;
+};
